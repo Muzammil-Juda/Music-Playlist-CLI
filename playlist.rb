@@ -64,6 +64,80 @@ class Playlist
       puts "\n"
       puts "This song was released in October 2019"
     end 
+    feedback
+  end
+
+  def von_list
+    puts "\n"
+    puts "What is your favorite song of King Von?"
+    puts "1. Crazy Story"
+    puts "2. Took her to the O"
+    puts "3. What it's like"
+  
+    song = gets.chomp.to_i
+    case song 
+    when 1
+      puts "\n"
+      puts "This song was released in December 2018"
+    when 2
+      puts "\n"
+      puts "This song was released in February 2020"
+    when 3
+      puts "\n"
+      puts "This song was released in September 2019"
+    end 
+    feedback
+  end
+
+  def uzi_list
+    puts "\n"
+    puts "What is your favorite song of Lil Uzi Vert?"
+    puts "1. Just wanna rock"
+    puts "2. 20 Min"
+    puts "3. XO Tour llif3"
+  
+    song = gets.chomp.to_i
+    case song 
+    when 1
+      puts "\n"
+      puts "This song was released in October 2022"
+    when 2
+      puts "\n"
+      puts "This song was released in November 2017"
+    when 3
+      puts "\n"
+      puts "This song was released in August 2017"
+    end 
+    feedback
+  end
+
+  def nas_x_list
+    puts "\n"
+    puts "What is your favorite song of Lil Nas X?"
+    puts "1. J Christ"
+    puts "2. Industry Baby"
+    puts "3. Holiday"
+  
+    song = gets.chomp.to_i
+    case song 
+    when 1
+      puts "\n"
+      puts "This song was released in January 2024"
+    when 2
+      puts "\n"
+      puts "This song was released in July 2021"
+    when 3
+      puts "\n"
+      puts "This song was released in November 2020"
+    end 
+    feedback
+  end
+
+  def thug_list
+   
+  end
+
+  def feedback
     puts "\n"
     puts "How was your Experience?"
     self.experience = gets.chomp.capitalize
@@ -77,22 +151,6 @@ class Playlist
   
     # To end the loop and exit the application after feedback
     exit
-  end
-
-  def von_list
-    puts "Hi, I'm King Von"
-  end
-
-  def uzi_list
-    puts "Hi, I'm Lil Uzi Vert"
-  end
-
-  def nas_x_list
-    puts "Hi, I'm Lil Nas X"
-  end
-
-  def thug_list
-    puts "Hi, I'm Young Thug"
   end
 
   def report
