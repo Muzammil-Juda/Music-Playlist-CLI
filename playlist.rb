@@ -134,7 +134,25 @@ class Playlist
   end
 
   def thug_list
-   
+    puts "\n"
+    puts "What is your favorite song of Young Thug?"
+    puts "1. Hot"
+    puts "2. Bad Boy"
+    puts "3. Gang up"
+  
+    song = gets.chomp.to_i
+    case song 
+    when 1
+      puts "\n"
+      puts "This song was released in November 2019"
+    when 2
+      puts "\n"
+      puts "This song was released in January 2021"
+    when 3
+      puts "\n"
+      puts "This song was released in April 2017"
+    end 
+    feedback
   end
 
   def feedback
