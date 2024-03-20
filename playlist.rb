@@ -46,34 +46,37 @@ class Playlist
   end
 
   def juice_list
+    puts "\n"
+    puts "What is your favorite song of Juice Wrld?"
+    puts "1. Lucid Dreams"
+    puts "2. Robbery"
+    puts "3. Bandit"
+  
+    song = gets.chomp.to_i
+    case song 
+    when 1
       puts "\n"
-      puts "What is your favorite song of Juice Wrld?"
-      puts "1. Lucid Dreams"
-      puts "2. Robbery"
-      puts "3. Bandit"
-
-      song = gets.chomp.to_i
-      case song 
-      when 1
-        puts "\n"
-        puts "This song was released in June 2017"
-      when 2
-        puts "\n"
-        puts "This song was released in February 2019"
-      when 3
-        puts "\n"
-        puts "This song was released in October 2019"
-      end 
+      puts "This song was released in June 2017"
+    when 2
+      puts "\n"
+      puts "This song was released in February 2019"
+    when 3
+      puts "\n"
+      puts "This song was released in October 2019"
+    end 
     puts "\n"
     puts "How was your Experience?"
     self.experience = gets.chomp.capitalize
     puts "\n"
     puts "How do you rate this App?"
     self.rate = gets.chomp.to_i
-
+  
     puts "\n"
-    puts "Thankyou for your feedback!"
+    puts "Thank you for your feedback!"
     report
+  
+    # To end the loop and exit the application after feedback
+    exit
   end
 
   def von_list
