@@ -37,7 +37,7 @@ class Playlist
           thug_list
         when 6
           puts "Thank you for using this Application."
-          puts "You you later. Good-Bye!"
+          puts "See you later. Good-Bye!"
           break
         else
           puts "Please choose from the provided options"
@@ -95,7 +95,7 @@ class Playlist
   def report
     puts "**********************************************"
     puts "Your Experience using this App: #{@experience}"
-    puts "Your Rating: #{@rating}"
+    puts "Your Rating: #{@rate}"
     puts "**********************************************"
   end
 end
