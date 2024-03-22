@@ -1,7 +1,7 @@
 class Playlist
   attr_accessor :experience, :rate
 
-  def initialize(experience, rate)
+  def initialize(experience = "", rate = 0)
     @experience = experience
     @rate = rate
   end
